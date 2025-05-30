@@ -1,0 +1,18 @@
+The above error occurred in the <AgentPlaygroundPage> component:
+
+    at AgentPlaygroundPage (https://6c3bba7f-b842-4d6d-a65a-01436d5ead2b-00-1daggdx2sxvxq.worf.replit.dev/src/pages/agent-playground-page.tsx:58:21)
+    at Route (https://6c3bba7f-b842-4d6d-a65a-01436d5ead2b-00-1daggdx2sxvxq.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=eb1a82de:323:16)
+    at Switch (https://6c3bba7f-b842-4d6d-a65a-01436d5ead2b-00-1daggdx2sxvxq.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=eb1a82de:379:17)
+    at Router
+    at Provider (https://6c3bba7f-b842-4d6d-a65a-01436d5ead2b-00-1daggdx2sxvxq.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-OXZDJRWN.js?v=eb1a82de:38:15)
+    at TooltipProvider (https://6c3bba7f-b842-4d6d-a65a-01436d5ead2b-00-1daggdx2sxvxq.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=eb1a82de:64:5)
+    at OnboardingProvider (https://6c3bba7f-b842-4d6d-a65a-01436d5ead2b-00-1daggdx2sxvxq.worf.replit.dev/src/hooks/use-onboarding.tsx:42:38)
+    at App
+    at V (https://6c3bba7f-b842-4d6d-a65a-01436d5ead2b-00-1daggdx2sxvxq.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/next-themes.js?v=eb1a82de:44:25)
+    at J (https://6c3bba7f-b842-4d6d-a65a-01436d5ead2b-00-1daggdx2sxvxq.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/next-themes.js?v=eb1a82de:42:18)
+    at QueryClientProvider (https://6c3bba7f-b842-4d6d-a65a-01436d5ead2b-00-1daggdx2sxvxq.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=eb1a82de:2805:3)
+    at Auth0Provider (https://6c3bba7f-b842-4d6d-a65a-01436d5ead2b-00-1daggdx2sxvxq.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@auth0_auth0-react.js?v=eb1a82de:1197:23)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+result is not defined

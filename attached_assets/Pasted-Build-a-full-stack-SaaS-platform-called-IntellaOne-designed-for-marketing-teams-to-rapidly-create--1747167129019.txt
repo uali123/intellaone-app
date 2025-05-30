@@ -1,0 +1,81 @@
+Build a full-stack SaaS platform called IntellaOne, designed for marketing teams to rapidly create, organize, and manage personalized marketing assets using Generative AI.
+Core Features:
+1. User Authentication & Access Management
+Implement secure user authentication (JWT-based) with support for OAuth (Google login).
+
+
+Role-based access control: Admin, Marketer, Collaborator.
+
+
+2. AI-Powered Content Generation Engine
+Allow users to input a brief, choose from content types (email, landing page, ad copy, product brochure).
+
+
+Integrate a Gen AI API (mock if needed) to generate drafts based on tone, target audience, and brand style.
+
+
+Allow editing, version history, and auto-save functionality.
+
+
+3. Marketing Asset Library
+Users can organize assets into folders or campaigns.
+
+
+Search and filter assets by type, audience, campaign, and creation date.
+
+
+View history of who edited what and when.
+
+
+4. Smart Collaboration Tools
+Real-time comments, mentions, and approvals workflow.
+
+
+Notification system (email + in-app).
+
+
+5. Frontend (React or Next.js with Tailwind)
+Clean, responsive, minimal UI.
+
+
+Dashboard with cards summarizing recent activity, AI drafts, campaign progress.
+
+
+Editable templates with autosuggest from AI.
+
+
+6. Backend (Node.js/Express or Python FastAPI)
+REST API for user, asset, and campaign management.
+
+
+Integration with a vector database (like Pinecone or a mock) to store embeddings for semantic search.
+
+
+Store structured data in PostgreSQL or MongoDB.
+
+
+7. Admin Panel
+Usage analytics (e.g., AI token usage, campaign success metrics).
+
+
+Invite new users, monitor content pipeline, manage permissions.
+
+
+8. Deployment & Scalability
+Dockerized setup.
+
+
+API gateway for AI services.
+
+
+Async task queue for long-running AI calls (Celery or BullMQ).
+
+
+Bonus (if time permits):
+Implement reminders or smart suggestions like: “You met Lisa from L’Oréal last week — follow up with an email?”
+
+
+Let users upload a brief in .docx or PDF and auto-generate a campaign asset set.
+
+
+Tech Stack suggestions: React/Next.js + Tailwind, Node.js/Express or FastAPI, PostgreSQL or MongoDB, Redis, OpenAI API (mocked if needed), Docker.

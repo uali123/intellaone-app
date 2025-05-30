@@ -1,0 +1,106 @@
+Prompt: Full-Stack Build Instruction for IntellaOne.com (Agentic AI Platform for PMMs)
+You are a senior full-stack engineering team building the IntellaOne platform — an AI-driven, agent-based web application for Product Marketing Managers (PMMs). Recreate intellaone.com from scratch using scalable, production-grade architecture. The platform should support autonomous AI agents that collaborate across workflows for research, messaging, and asset creation.
+
+🧱 Frontend (React + Tailwind + Vite/Next.js)
+Use React (18+) for a modular component structure.
+
+Style with TailwindCSS and organize design tokens for scalability.
+
+Structure layout using reusable sections:
+
+HeroSection with animated call-to-action
+
+AgentShowcase with icon + description components for Max, Maven, Matrix, and Motion
+
+UseCasesGrid with card-style visuals for PMM workflows
+
+HowItWorks with vertical timeline or stepper components
+
+Testimonials with carousel (optional)
+
+CallToActionBanner with email capture form (integrated with Mailchimp or Supabase)
+
+Implement client-side routing via React Router or use Next.js pages for SEO optimization.
+
+Mobile responsive (tailored for desktop > tablet > mobile)
+
+🤖 AI Agent Layer
+Build orchestrated AI agents with specialized logic for:
+
+Maven: Conducts real-time web scraping + retrieval-augmented generation (RAG)
+
+Matrix: Messaging/positioning logic with prompt chaining and persona-based tone control
+
+Max: Document generator (one-pagers, battlecards) using structured templates + brand variables
+
+Motion (placeholder): Campaign planner with UI builder (like step-by-step TurboTax UI)
+
+Use OpenAI GPT-4 (via API) with modular prompt engineering per agent
+
+Implement agent memory using Pinecone or PostgreSQL vector store for semantic storage
+
+🔗 Backend (Node.js + Express + PostgreSQL)
+Use Express.js as backend API layer
+
+REST endpoints for:
+
+/generate → takes agent name and task, returns output
+
+/save → stores user project history and generated outputs
+
+/feedback → collects feedback from users for RLHF
+
+Connect to PostgreSQL via Prisma ORM
+
+Enable user authentication using Supabase Auth or Auth0
+
+☁️ Infra + DevOps
+Host frontend via Vercel
+
+Backend API hosted on Render, Railway, or Heroku (start tier)
+
+Store user session data, generated files, and metadata in Supabase
+
+Logging with LogRocket or Sentry
+
+📊 Analytics & Metrics
+Integrate Heap or PostHog for product analytics (track agent usage, drop-offs, adoption)
+
+Setup dashboard for admin view of:
+
+Most-used agents
+
+Most-requested asset types
+
+Average generation time per asset
+
+Feedback score per session
+
+🔐 Security + Trust Layer
+Enable role-based access (basic user vs. admin)
+
+Build Explainability Layer (Phase 2):
+
+Show agent reasoning chain + source links
+
+Agent cross-validation feature (peer review of outputs)
+
+🧪 Testing
+Unit testing with Jest + React Testing Library
+
+API integration testing via Supertest
+
+Use Cypress for E2E testing of common PMM flows
+
+📦 Future-Proofing
+Design agent layer with serverless functions for scalable agent execution
+
+Abstract AI orchestration into modular service (e.g., agentOrchestrator.js)
+
+Plan for vertical-specific agents (FinTech, HealthTech, etc.) as models mature
+
+Build multi-agent communication using simple event bus (pub/sub) pattern for now
+
+Deliverable:
+An MVP that replicates the structure of IntellaOne.com and implements functional prototypes of at least two agents (Maven + Max). Ensure smooth UX, data persistence, agent response caching, and mobile optimization.
+
