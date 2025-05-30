@@ -141,7 +141,9 @@ interface AuthContextType {
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
-const backendURL = import.meta.env.VITE_BACKEND_URL;
+const backendURL =
+  import.meta.env.VITE_BACKEND_URL ||
+  "https://intellaone-application-1066004850799.us-central1.run.app";
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
