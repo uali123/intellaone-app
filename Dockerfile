@@ -47,11 +47,11 @@ RUN mkdir -p /app/temp /app/uploads /app/logs && \
 USER nodejs
 
 # Expose port 8080
-EXPOSE 8080
+EXPOSE 5050
 
 # Set environment
 ENV NODE_ENV=production
-ENV PORT=8080
+ENV PORT=5050
 
 # Start the application
 CMD ["npm", "start"]
