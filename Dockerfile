@@ -34,14 +34,19 @@ COPY --from=builder /app/server ./server
 
 # Copy any other necessary files
 COPY drizzle.config.ts ./
-COPY --from=builder /app/node_modules ./node_modules
 
 # Create a non-root user
 RUN addgroup -g 1001 -S nodejs
 RUN adduser -S nodejs -u 1001
+
+# Create temp directory and uploads directory with proper permissions
+RUN mkdir -p /app/temp /app/uploads /app/logs && \
+    chown -R nodejs:nodejs /app
+
+# Switch to non-root user
 USER nodejs
 
-# Expose port 5050
+# Expose port 8080
 EXPOSE 8080
 
 # Set environment
