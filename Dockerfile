@@ -42,11 +42,11 @@ RUN adduser -S nodejs -u 1001
 USER nodejs
 
 # Expose port 5050
-EXPOSE 5050
+EXPOSE 8080
 
 # Set environment
 ENV NODE_ENV=production
-ENV PORT=5050
+ENV PORT=8080
 
 # Start the application
 CMD ["npm", "start"]
